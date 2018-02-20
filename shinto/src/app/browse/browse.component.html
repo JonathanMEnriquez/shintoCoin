@@ -1,0 +1,24 @@
+<div id="header">
+  <h1>Browse the Ledger</h1>
+</div>
+<div id="message">
+  <table>
+    <h3>ShintoCoin Ledger</h3>
+    <tr>
+      <th>Action</th>
+      <th>Amount</th>
+      <th>Value</th>
+      <th></th>
+    </tr>
+  <div *ngFor="let transaction of transactions">
+    <tr>
+      <td>{{transaction.action}}</td>
+      <td>{{transaction.amount}}</td>
+      <td>{{transaction.value}}</td>
+      <td>
+        <a href='/transaction/{{transaction.id}}'>Details</a>
+      </td>
+    </tr>
+  </div>
+  </table>
+</div>
