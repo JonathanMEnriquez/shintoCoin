@@ -10,8 +10,8 @@
       <th>Value</th>
       <th></th>
     </tr>
-  <div *ngFor="let transaction of transactions">
-    <tr>
+  <!-- <div *ngFor="let transaction of transactions"> -->
+    <tr *ngFor="let transaction of transactions">
       <td>{{transaction.action}}</td>
       <td>{{transaction.amount}}</td>
       <td>{{transaction.value}}</td>
@@ -19,6 +19,6 @@
         <a href='/transaction/{{transaction.id}}'>Details</a>
       </td>
     </tr>
-  </div>
+  <!-- </div> -->
   </table>
 </div>
